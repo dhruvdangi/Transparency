@@ -1,0 +1,8 @@
+<resources>
+    <color name="primaryColor">#f44336</color>
+    <color name="primaryColorDark">#d32f2f</color>
+    <color name="my_fab_color">#03a9f4</color>
+    <color name="grey_1000">#03a9f4</color>
+
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recycler_layout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:clickable="true">
+<TextView
+    android:id="@+id/recycler_tv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/selectableItemBackground"
+    android:paddingTop="10dp"
+    android:paddingBottom="2dp"
+    android:layout_marginLeft="@dimen/md_listitem_margin_left"
+    android:textColor="@android:color/black"
+    android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/recycler_tv_unlocks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:layout_marginLeft="@dimen/md_listitem_margin_left"
+        android:clickable="true"
+        android:paddingTop="2dp"
+        android:paddingBottom="13dp"
+        android:textColor="#616161"
+        android:textSize="14sp"/>
+    </LinearLayout>

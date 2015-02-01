@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion '21.0.2'
+    defaultConfig {
+        applicationId "com.dhruv.transparency"
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+repositories {
+    jcenter()
+    mavenCentral()
+
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:21.0.+'
+    compile 'com.android.support:cardview-v7:21.0.+'
+    compile 'com.android.support:recyclerview-v7:21.0.+'
+    compile 'com.shamanland:fab:0.0.6'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'com.romainpiel.shimmer:library:1.2.0@aar'
+    compile 'com.r0adkll:slidableactivity:2.0.1'
+    compile 'info.hoang8f:fbutton:1.0.5'
+    compile 'com.afollestad:material-dialogs:0.6.1.2'
+    compile 'com.yqritc:recyclerview-flexibledivider:1.0.0'
+    compile 'com.github.fengdai:alertdialogpro-theme-material:0.2.1'
+
+}

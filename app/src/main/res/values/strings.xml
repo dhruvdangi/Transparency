@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Transparency</string>
+    <string name="action_settings">Settings</string>
+    <string name="label">label</string>
+    <string name="title">title</string>
+    <string name="content">content</string>
+    <string name="version">1.0</string>
+    <item name="password" type="id"/>
+    <string-array name="notificationDelayValues">
+        <item>3600</item>
+        <item>10800</item>
+        <item>18000</item>
+        <item>25200</item>
+        <item>36000</item>
+    </string-array>
+    <string-array name="notificationDelay">
+        <item>1 hr</item>
+        <item>3 hrs</item>
+        <item>5 hrs</item>
+        <item>7 hrs</item>
+        <item>10 hrs</item>
+    </string-array>
+    <string-array name="noOfEntries">
+        <item>100</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>5000</item>
+        <item>Unlimited</item>
+    </string-array>
+    <string-array name="noOfEntriesValues">
+        <item>100</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>5000</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="maxPictures">
+        <item>50</item>
+        <item>100</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>Unlimited</item>
+    </string-array>
+    <string-array name="maxPicturesValues">
+        <item>50</item>
+        <item>100</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>-1</item>
+    </string-array>
+</resources>

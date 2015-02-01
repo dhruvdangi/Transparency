@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+    android:title="Notification"
+    android:defaultValue="false"
+    android:summary="Remind to use phone less"
+    android:key="notification" />
+
+    <ListPreference
+        android:title="Time of delay"
+        android:summary="Time of delay of notification"
+        android:key="notificationDelay"
+        android:dependency="notification"
+        android:defaultValue="10800"
+        android:entries="@array/notificationDelay"
+        android:entryValues="@array/notificationDelayValues"/>
+    <CheckBoxPreference
+        android:title="Password"
+        android:defaultValue="false"
+        android:summary="Enable/Disable password"
+        android:key="enablePassword"/>
+    <EditTextPreference
+        android:title="Password"
+        android:summary="Set password (Default: 1234)"
+        android:key="password"
+        android:dependency="enablePassword"
+      />
+    <ListPreference
+        android:title="Number of Entries"
+        android:summary="Max number of phone unlock entries"
+        android:key="noOfEntries"
+        android:defaultValue="-1"
+        android:entries="@array/noOfEntries"
+        android:entryValues="@array/noOfEntriesValues"/>
+    <CheckBoxPreference
+        android:title="Take Pictures"
+        android:defaultValue="false"
+        android:summary="Take pictures when phone unlocks"
+        android:key="enablePicture" />
+    <ListPreference
+        android:title="Number of Pictures"
+        android:summary="Max number of pictures to store"
+        android:key="MAX_PICTURES"
+        android:defaultValue="50"
+        android:dependency="enablePicture"
+        android:entries="@array/maxPictures"
+        android:entryValues="@array/maxPicturesValues"/>
+
+</PreferenceScreen>
